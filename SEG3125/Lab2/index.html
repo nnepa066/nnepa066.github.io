@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <title>SEG3125</title>
-    <div>
-        <h1>Labs</h1>
-        <button type="button" onclick="location.href='Lab1/index.html'">Lab 1</button>      
-        <br>
-        <button type="button" onclick="location.href='Lab2/index.html'">Lab 2</button>
-    </div>
+<head>	
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <! Title>
+  <title>SEG3125 - Lab 2</title>
+</head>
+
+<header>
+  <!-- Title of the page-->
+  <h1>Editto</h1>
+  <h4>Online Grocery Store</h4>
+</header>
+
+<body>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'PersonalData')">Personal Data</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="PersonalData" class="tabcontent">
+  <h3>Personal Information</h3>
+  <br>
+  <p>Let us optimize your experience by telling us a bit about you.</p>
+  <br>
+	Choose a Restriction Category:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct'); selectedItems()">
+    <option selected="Selected"></option>    
+    <option value="Lactose">Lactose-intolerant</option>
+    <option value="Nuts">Allergy to nuts</option>
+    <option value="None">None</option>
+	</select>
+  <br>
+  <br>
+  Are you looking for organic food?
+  <div class="radiobox">
+    <input type="radio" id="r1" name="Organic" value="No" checked="checked" onclick="populateListProductChoices('dietSelect', 'displayProduct'); selectedItems()">No<br>
+    <input type="radio" id="r2" name="Organic" value="Yes" onclick="populateListProductChoices('dietSelect', 'displayProduct'); selectedItems()">Yes<br>
+  </div>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your obtimal products</h3>
+  <br>
+  <p>We preselected products based on your restrictions.</p>
+  <br>
+	 Choose items to buy:
+	 <div id="displayProduct" onclick="selectedItems()"></div>
+   <br>
+   <p>Selected items will be added to cart automatically!</p>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <br>
+  <p>Here is your cart.</p>
+  <br>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+
+<footer>
+  <! My signature>
+  <p id="signature">Created by Zylion Exo</p>
+</footer>
+
 </html>
