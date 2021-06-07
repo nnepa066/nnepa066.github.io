@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts/main.js"></script>  
+  <! Title>
+  <title>SEG3125 - Lab 2</title>
+</head>
+
+<header>
+  <!-- Title of the page-->
+  <h1>Editto</h1>
+  <h4>Online Grocery Store</h4>
+  <p>Click on <u onclick="openInfo(event, 'PersonalData')">Personal Data</u> to proceed</p>
+</header>
+
+<body>
+
+<!-- Tab content -->
+<div id="PersonalData" class="tabcontent">
+  <h4>Personal Data</h4>
+  <h3>Restrictions</h3>
+  <br>
+  <p>Let us optimize your experience by telling us a bit about you.</p>
+  <br>
+	Are you Lactose-intolerant?
+  <div class="radiobox">
+    <input type="radio" id="r1" name="Lactose" value="No" checked="checked" onclick="populateListProductChoices('displayProduct'); selectedItems()">No<br>
+    <input type="radio" id="r2" name="Lactose" value="Yes" onclick="populateListProductChoices('displayProduct'); selectedItems()">Yes<br>
+  </div>  	
+  <br>
+  Do you have allergy to nuts?
+  <div class="radiobox">
+    <input type="radio" id="r3" name="Nuts" value="No" checked="checked" onclick="populateListProductChoices('displayProduct'); selectedItems()">No<br>
+    <input type="radio" id="r4" name="Nuts" value="Yes" onclick="populateListProductChoices('displayProduct'); selectedItems()">Yes<br>
+  </div>
+  <br>
+  Are you looking for organic food?
+  <div class="radiobox">
+    <input type="radio" id="r5" name="Organic" value="No" checked="checked" onclick="populateListProductChoices('displayProduct'); selectedItems()">No<br>
+    <input type="radio" id="r6" name="Organic" value="Yes" onclick="populateListProductChoices('displayProduct'); selectedItems()">Yes<br>
+  </div>
+  <br>
+  <button onclick="openInfo(event, 'Products'); populateListProductChoices('displayProduct'); selectedItems()">Get Products</button>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h4>Personal Data > Products</h4>
+  <h3>Your obtimal products</h3>
+  <br>
+  <p>We preselected products based on your restrictions.</p>
+  <br>
+	 Choose items to buy:
+   <br>
+   <br>
+	 <div id="displayProduct" onclick="selectedItems()"></div>
+    <button onclick="openInfo(event, 'PersonalData')">Back</button>
+    <button onclick="openInfo(event, 'Cart')">Checkout</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h4>Personal Data > Products > Cart</h4>
+  <h3>Cart</h3>
+  <br>
+  <p>Here is your cart.</p>
+  <br>
+  <div id="displayCart"></div>
+  <br>
+  <button onclick="openInfo(event, 'Products')">Back</button>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+
+<footer>
+  <! My signature>
+  <p id="signature">Created by Zylion Exo</p>
+</footer>
+
+</html>
