@@ -14,11 +14,11 @@ header{
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    color: white;
+    color: rgb(128, 243, 153);
 }
 
 header p {
-    color: white;
+    color: rgb(128, 243, 153);
 }
 
 form {
@@ -40,7 +40,7 @@ footer {
 }
 
 footer p{
-    color: white;
+    color: rgb(128, 243, 153);
 }
 
 p {
