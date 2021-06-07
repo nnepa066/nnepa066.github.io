@@ -41,7 +41,7 @@
     <input type="radio" id="r6" name="Organic" value="Yes" onclick="populateListProductChoices('displayProduct'); selectedItems()">Yes<br>
   </div>
   <br>
-  <button onclick="openInfo(event, 'Products'); populateListProductChoices('displayProduct'); selectedItems()">Get Products</button>
+  <button onclick="openInfo(event, 'Products'); populateListProductChoices('displayProduct'); selectedItems()"><text>Get Products</text></button>
 </div>
 
 <div id="Products" class="tabcontent">
@@ -54,8 +54,8 @@
    <br>
    <br>
 	 <div id="displayProduct" onclick="selectedItems()"></div>
-    <button onclick="openInfo(event, 'PersonalData')">Back</button>
-    <button onclick="openInfo(event, 'Cart')">Checkout</button>
+    <button onclick="openInfo(event, 'PersonalData')"><text>Back</text></button>
+    <button onclick="openInfo(event, 'Cart')"><text>Checkout</text></button>
 </div>
 
 <div id="Cart" class="tabcontent">
@@ -66,7 +66,7 @@
   <br>
   <div id="displayCart"></div>
   <br>
-  <button onclick="openInfo(event, 'Products')">Back</button>
+  <button onclick="openInfo(event, 'Products')"><text>Back</text></button>
 </div>
 
 <script src="scripts/groceries.js"></script>
