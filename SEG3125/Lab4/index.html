@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>   
+  <! Title>
+  <title>SEG3125 - Lab 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">   
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="p-3 text-white">
+        <h1>PhisioCare</h1>
+        <h4>Physiotherapy Centre!</h4>
+
+        <!-- <div class="p-3 my-3 bg-dark text-white">
+          <div class="col-sm-3">Services</div>
+          <div class="col-sm-3">Experts</div>
+          <div class="col-sm-3">Appointment</div>
+          <div class="col-sm-3">Where to find us</div>
+      </div> -->
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+
+    <div class="p-3 border bg-light text-success">
+      <h3>Welcome to PhisioCare!</h3>
+      <p>Our goal is to provide you the care you need so you can continue living your active lifestyle.</p>
+      <p>We offer personalized treatment with primary focus on delivering the care to our patients. We priortize patients' health and wellness, and our skilled physiotherapists work together to deliver optimal health care.</p>
+      <br>
+      <p><b>Location</b></p>
+      <p> 200 Mainstreet Avenue, Ottawa</p>
+      <p>Ontario, Canada</p>
+    </div>
+
+    <!-- <div class="p-3 border bg-light text-success">
+        <h3>Let us tell you about our expertise</h3>
+        <p>We can <mark>cut hair</mark></p>
+        <p class="text-center" >Align wheels</p>
+        <p class="text-uppercase">Write in uppercase</p>
+        <p class="text-center text-uppercase" >centered and uppercase</p>
+    </div> -->
+
+    <div class="p-3 border bg-light text-success">
+      <h3>Services</h3>  
+      <br>               
+        <table class="table table-primary table-hover">
+            <tbody>
+            <tr>
+                <td>TMJ Pain</td>
+                <td>
+                      <b>Price</b>
+                      <br>
+                      <p>$50</p>
+                      <b>Time</b>
+                      <br>
+                      <p>60 minutes</p>
+                </td>
+            </tr>
+            <tr>
+              <td>Massage Therapy</td>
+              <td>
+                    <b>Price</b>
+                    <br>
+                    <p>$55</p>
+                    <b>Time</b>
+                    <br>
+                    <p>50 minutes</p>
+              </td>
+          </tr>
+          <tr>
+            <td>Accupuncture</td>
+            <td>
+                  <b>Price</b>
+                  <br>
+                  <p>$60</p>
+                  <b>Time</b>
+                  <br>
+                  <p>40 minutes</p>
+            </td>
+        </tr>
+        <tr>
+          <td>Custom Knee Brace</td>
+          <td>
+                <b>Price</b>
+                <br>
+                <p>$65</p>
+                <b>Time</b>
+                <br>
+                <p>60 minutes</p>
+          </td>
+      </tr>
+      <tr>
+        <td>Vestibular Rehab</td>
+        <td>
+              <b>Price</b>
+              <br>
+              <p>$70</p>
+              <b>Time</b>
+              <br>
+              <p>70 minutes</p>
+        </td>
+    </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    <div class="p-3 border bg-light text-success">
+      <h3>Meet our experts</h3>
+      <br>
+      <div class="container row p-1">        
+          <div class="col-sm-4">
+            <div class="card" style="width:220px; height:420px; background-color:#198754">
+                <img class="card-img-top" src="images/Jenn.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-white">Jenn</h4>
+                    <p class="card-text text-white">Clinic Manager</p>
+                    <p class="card-text text-white">8 Years of experience</p>
+                    <p class="card-text text-white"><i>(613) 692-1913</i></p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width:220px; height:420px; background-color:#198754">
+              <img class="card-img-top" src="images/Michael.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                  <h4 class="card-title text-white">Michael</h4>
+                  <p class="card-text text-white">Clinic Massage Therapist</p>
+                  <p class="card-text text-white">6 Years of experience</p>
+                  <p class="card-text text-white"><i>(613) 491-2375</i></p>
+              </div>
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width:220px; height:420px; background-color:#198754">
+              <img class="card-img-top" src="images/Helan.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                  <h4 class="card-title text-white">Helan</h4>
+                  <p class="card-text text-white">Clinic Director</p>
+                  <p class="card-text text-white">10 Years of experience</p>
+                  <p class="card-text text-white"><i>(613) 446-1574</i></p>
+              </div>
+          </div>
+          </div>
+    </div>
+    </div>
+
+    <div class="p-3 border bg-light text-success">
+      <h3>Request an Appointment</h3>
+      <br>
+      <form class="needs-validation">
+        <div class="mb-3">
+          <label for="validationName" class="form-label">Name</label>
+          <input type="name" class="form-control" id="validationName" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date of Appointment</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Time of Appointment</label>
+          <input type="time" class="form-control" id="time" required>
+        </div>
+        <div class="mb-3">
+          <label for="service" class="form-label">Service</label>
+          <select id="serviceSelect" class="form-select" required>
+            <option></option>
+            <option>TMJ Pain - $50</option>
+            <option>Massage Therapy - $55</option>
+            <option>Accupuncture - $60</option>
+            <option>Custom Knee Brace - $65</option>
+            <option>Vestibular Rehab - $70</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
+
+        <!-- <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Appointment Request Sent!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Please allow 2-3 business days to receive an email reply with further details.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </form>
+    </div>
+
+    <div class="modal-footer">
+      <! My signature>
+      <p class="text-white" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><i>Created by Zylion Exo</i></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
